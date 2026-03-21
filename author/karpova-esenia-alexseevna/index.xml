@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karpova Esenia Alexseevna | Wowchemy Research Group</title>
+    <link>https://example.com/author/karpova-esenia-alexseevna/</link>
+      <atom:link href="https://example.com/author/karpova-esenia-alexseevna/index.xml" rel="self" type="application/rss+xml" />
+    <description>Karpova Esenia Alexseevna</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://example.com/author/karpova-esenia-alexseevna/avatar_hu_2f1d2f09400e2e6c.jpg</url>
+      <title>Karpova Esenia Alexseevna</title>
+      <link>https://example.com/author/karpova-esenia-alexseevna/</link>
+    </image>
+    
+    <item>
+      <title>Karpova Esenia Alexseevna</title>
+      <link>https://example.com/author/karpova-esenia-alexseevna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/author/karpova-esenia-alexseevna/</guid>
+      <description>&lt;p&gt;Karpova Esenia is a professor of artificial intelligence at the PFUR AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

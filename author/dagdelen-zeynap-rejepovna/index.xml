@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dagdelen Zeynap Rejepovna | Wowchemy Research Group</title>
-    <link>http://localhost:1313/author/dagdelen-zeynap-rejepovna/</link>
-      <atom:link href="http://localhost:1313/author/dagdelen-zeynap-rejepovna/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://example.com/author/dagdelen-zeynap-rejepovna/</link>
+      <atom:link href="https://example.com/author/dagdelen-zeynap-rejepovna/index.xml" rel="self" type="application/rss+xml" />
     <description>Dagdelen Zeynap Rejepovna</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
     <image>
-      <url>http://localhost:1313/author/dagdelen-zeynap-rejepovna/avatar_hu_dfeca0d2198492b3.png</url>
+      <url>https://example.com/author/dagdelen-zeynap-rejepovna/avatar_hu_dfeca0d2198492b3.png</url>
       <title>Dagdelen Zeynap Rejepovna</title>
-      <link>http://localhost:1313/author/dagdelen-zeynap-rejepovna/</link>
+      <link>https://example.com/author/dagdelen-zeynap-rejepovna/</link>
     </image>
     
     <item>
       <title>Dagdelen Zeynap Rejepovna</title>
-      <link>http://localhost:1313/author/dagdelen-zeynap-rejepovna/</link>
+      <link>https://example.com/author/dagdelen-zeynap-rejepovna/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/dagdelen-zeynap-rejepovna/</guid>
+      <guid>https://example.com/author/dagdelen-zeynap-rejepovna/</guid>
       <description>&lt;p&gt;I love sculpting, drawing, and creating new things with my own hands. I&amp;rsquo;m also interested in programming and website design.&lt;/p&gt;
 </description>
     </item>
