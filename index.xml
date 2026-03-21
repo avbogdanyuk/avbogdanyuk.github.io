@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wowchemy Research Group</title>
-    <link>https://example.com/</link>
-      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Wowchemy Research Group</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu_ec961d71fd4b62b8.png</url>
+      <url>http://localhost:1313/media/icon_hu_ec961d71fd4b62b8.png</url>
       <title>Wowchemy Research Group</title>
-      <link>https://example.com/</link>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
       <title>Example Event</title>
-      <link>https://example.com/event/example/</link>
+      <link>http://localhost:1313/event/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://example.com/event/example/</guid>
+      <guid>http://localhost:1313/event/example/</guid>
       <description>&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://docs.hugoblox.com/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
@@ -29,107 +29,215 @@
     
     <item>
       <title>People</title>
-      <link>https://example.com/people/</link>
+      <link>http://localhost:1313/people/</link>
       <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.com/people/</guid>
+      <guid>http://localhost:1313/people/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Проектная работа. Образование планетной системы</title>
+      <link>http://localhost:1313/post/20-12-01-wowchemy-prize/</link>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/20-12-01-wowchemy-prize/</guid>
+      <description>&lt;p&gt;Проектная работа. Образование планетной системы&lt;/p&gt;
+&lt;h1 id=&#34;цель-работы&#34;&gt;Цель работы&lt;/h1&gt;
+&lt;p&gt;Цель данной работы — численное моделирование образования планетной системы из газопылевого облака с использованием методов молекулярной динамики, гравитационного взаимодействия, сил трения и слипания частиц.&lt;/p&gt;
+&lt;h1 id=&#34;задание&#34;&gt;Задание&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Напиcать программу, моделирующую движение N точек в плоскости, испытывающих притяжение к центральной неподвижной точке, не взаимодействующих между собой  и двигающихся по орбитам с первой космической скоростью.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести гравитационное взаимодействие между частицами. Убрать неподвижную центральную точку. Добавить отталкивание между частицами при их сближении на расстояние меньше суммы их радиусов. Вывести на экран кинетическую и потенциальную энергии. Сделать импульс системы равным 0. Добавить силы трения между частицами.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Включить в модель угловые скорости вращения вокруг собственной оси каждой частицы.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Смоделировать трехмерный случай N взаимодействующих частиц с отталкиванием без трения. Вывести на экран проекции движения частиц в плоскостях XY , Y Z, XZ. Нарисовать зависимость кинетической, потенциальной и полной энергии от времени.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести в трехмерном случае слипание частиц после того, как они приблизятся на малое расстояние. При образовании большей частицы должны сохраняться суммарные масса и импульс системы.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести силы трения. Объяснить вид кинетической и потенциальной энергии.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести частицы двух сортов с разной массой и соответствующим массе радиусом. Добавить силу трения между частицами. Вывести на экран график энергии, переходящей в тепло. Объяснить график полной энергии. Ввести частицы с массами, задаваемыми случайным образом, и соответствующими радиусами.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;образование-планетной-системы&#34;&gt;Образование планетной системы&lt;/h1&gt;
+&lt;h2 id=&#34;введение&#34;&gt;Введение&lt;/h2&gt;
+&lt;p&gt;Формирование планетных систем — один из ключевых процессов эволюции Вселенной. Согласно современным представлениям, звёзды и их планетные системы образуются в результате гравитационного сжатия межзвёздных газопылевых облаков. В процессе сжатия облако фрагментируется, формируются протозвёзды и протопланетные диски, в которых впоследствии образуются планеты.&lt;/p&gt;
+&lt;h2 id=&#34;теоретическое-описание-задачи&#34;&gt;Теоретическое описание задачи&lt;/h2&gt;
+&lt;h3 id=&#34;происхождение-звёзд-и-звёздных-систем&#34;&gt;Происхождение звёзд и звёздных систем&lt;/h3&gt;
+&lt;p&gt;Согласно теории Фридмана, Леметра, Гамова возникновение Вселенной произошло из точки в результате Большого взрыва примерно 13,7 млрд. лет назад.&lt;/p&gt;
+&lt;p&gt;В этот момент времени, который берется за начало отсчета, Вселенная имела очень малый размер и экстремально высокие плотность и температуру. С тех пор Вселенная непрерывно расширяется и остывает.  В процессе расширения и охлаждения образовались элементарные частицы, затем атомы, и под действием гравитационной неустойчивости начали формироваться первые структуры: протоскопления, протогалактики, галактики и, наконец, звёзды.&lt;/p&gt;
+&lt;p&gt;Звёзды, превышающие массу Солнца в десятки раз, быстро эволюционируют и взрываются как сверхновые, выбрасывая тяжёлые элементы, из которых впоследствии формируются новые звёзды и планеты .&lt;/p&gt;
+&lt;h3 id=&#34;образование-солнечной-системы&#34;&gt;Образование Солнечной системы&lt;/h3&gt;
+&lt;p&gt;Согласно теории образования Солнечной системы, предложенной Отто Шмидтом (СССР, 1944 год), газопылевое облако, из которого позднее образовались планеты и Солнце нашей Солнечной системы вращалось, и по мере гравитационного сжатия газопылевого облака расстояние всех его частей от оси вращения сокращалось и скорость вращения сгущающегося облака увеличивалась. В плоскости, перпендикулярной оси вращения, сжатие происходило медленнее, и потому облако, бывшее изначально шаровидным, становилось все более плоским. Из-за гравитационной неустойчивости на периферии формирующегося диска отделилось кольцо вещества. Оставшееся облако продолжало сжиматься и вращаться еще быстрее. Затем от него отделилось новое кольцо вещества, и кольца вещества сгустились в планеты.&lt;/p&gt;
+&lt;p&gt;Зависимость скорости обращения планет от расстояния до Солнца соответствует третьему закону Кеплера - скорость убывает обратно пропорционально корню квадратному из расстояния до центра:&lt;/p&gt;
+&lt;p&gt;$$
+v \sim \frac{1}{\sqrt{r}}
+$$&lt;/p&gt;
+&lt;p&gt;где $r$ — расстояние до центра.&lt;/p&gt;
+&lt;h2 id=&#34;математическая-модель&#34;&gt;Математическая модель&lt;/h2&gt;
+&lt;h3 id=&#34;гравитационное-взаимодействие&#34;&gt;Гравитационное взаимодействие&lt;/h3&gt;
+&lt;p&gt;Проведем моделирование одного из этапов эволюции Вселенной — образование некой «солнечной» системы из межзвездного газа. Так как число моделируемых частиц весьма ограничено, то можно сказать, что в этой модели планеты образуются из уже сформировавшихся газопылевых уплотнений, которыми и являются задаваемые частицы.&lt;/p&gt;
+&lt;p&gt;Потенциальная энергия гравитационного взаимодействия системы частиц описывается формулой:&lt;/p&gt;
+&lt;p&gt;$$
+U_i = -\sum_{j \neq i} \frac{\gamma m_i m_j}{r_{ij}}, \quad U = \frac{1}{2} \sum_i U_i
+$$&lt;/p&gt;
+&lt;p&gt;где $\gamma$ — гравитационная постоянная, $m_i$, $m_j$ — массы частиц, $r_{ij}$ — расстояние между ними.&lt;/p&gt;
+&lt;p&gt;Полная потенциальная энергия системы частиц равна:&lt;/p&gt;
+&lt;p&gt;$$
+U = \frac{1}{2} \sum_{i} U_{i}
+$$&lt;/p&gt;
+&lt;p&gt;Множитель $\frac{1}{2}$ необходим, так как энергия взаимодействия между каждой парой частиц учитывается в этой сумме дважды.&lt;/p&gt;
+&lt;p&gt;Гравитация — дальнодействующая сила, что требует учёта взаимодействий между всеми парами частиц. Поэтому нельзя игнорировать взаимодействие между удаленными частицами. Это приводит к сложности $O(N^2)$, что ограничивает размер моделируемых систем, даже на современных компьютерах.&lt;/p&gt;
+&lt;h3 id=&#34;начальные-условия&#34;&gt;Начальные условия&lt;/h3&gt;
+&lt;p&gt;Распределение частиц в плоскости в начальный момент времени задается случайным образом, при достаточно большом количестве частиц распределение будет равномерным в плоскости диска, если для двумерного случая модуль радиус-вектора выбирать как $r = r0*√random$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;радиус: $r = r_0 \cdot \text{random}$&lt;/li&gt;
+&lt;li&gt;угол: $\alpha = 2\pi \cdot \text{random}$&lt;/li&gt;
+&lt;li&gt;начальная скорость, которая находится по третьему закону Кеплера:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$
+v_x = -y \cdot \omega_0 \left( \frac{r_0}{r} \right)^{3/2}, \quad v_y = x \cdot \omega_0 \left( \frac{r_0}{r} \right)^{3/2}, \quad v_z = 0
+$$&lt;/p&gt;
+&lt;p&gt;где $\omega_0$ — угловая скорость на расстоянии $r_0$, а $r_0$ – радиус газопылевого диска.&lt;/p&gt;
+&lt;h3 id=&#34;силы-отталкивания-и-трения&#34;&gt;Силы отталкивания и трения&lt;/h3&gt;
+&lt;p&gt;Для частиц, у которых расстояние между центрами меньше суммы их радиусов, необходимо ввести силы трения и отталкивания.&lt;/p&gt;
+&lt;p&gt;Это делается для удобства написания программы, так как в реальности при столкновении двух газопылевых облаков произойдет их слипание и при слишком больших скоростях возможно их разбиение на более мелкие.&lt;/p&gt;
+&lt;h4 id=&#34;силу-отталкивания-можно-взять&#34;&gt;Силу отталкивания можно взять:&lt;/h4&gt;
+&lt;p&gt;$$
+F^r(b) = k \left( \left( \frac{a}{b} \right)^8 - 1 \right)
+$$&lt;/p&gt;
+&lt;p&gt;где $a = R_i + R_j$ — сумма радиусов частиц $i$ и $j$,
+и  $b = |\mathbf{r}_{i,j}| = |\mathbf{r}_i - \mathbf{r}_j|$ — модуль радиус-вектора взаимодействия.&lt;/p&gt;
+&lt;h4 id=&#34;сила-трения&#34;&gt;Сила трения&lt;/h4&gt;
+&lt;p&gt;Сила трения перпендикулярна радиус-вектору взаимодействия b и
+направлена против движения частиц относительно друг друга. Единичный вектор вдоль силы трения для двумерной модели равен:&lt;/p&gt;
+&lt;p&gt;$$
+n = \frac{(-b_y, b_x)}{\sqrt{b_x^2 + b_y^2}}
+$$&lt;/p&gt;
+&lt;p&gt;Относительная скорость поверхностей частиц, перпендикулярная радиусу:&lt;/p&gt;
+&lt;p&gt;$$
+W_\perp = (v_i - v_j) \cdot n - \omega_i R_i - \omega_j R_j
+$$&lt;/p&gt;
+&lt;p&gt;где $\omega_i$ и $\omega_j$ — угловые скорости вращения частиц $i$ и $j$ и $W = \mathbf{v}_i - \mathbf{v}_j$ - относительная скорость двух взаимодействующих частиц.&lt;/p&gt;
+&lt;p&gt;В простейшем приближении коэффициент трения определяется как:&lt;/p&gt;
+&lt;p&gt;$$
+\mu = \beta W_{\perp}
+$$&lt;/p&gt;
+&lt;p&gt;где:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\beta$ — постоянный коэффициент,&lt;/li&gt;
+&lt;li&gt;$W_{\perp}$ — перпендикулярная компонента относительной скорости $W$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Модуль силы трения равен:&lt;/p&gt;
+&lt;p&gt;$$
+F^f = \mu F^r(b), \quad \mu = \beta W_\perp
+$$&lt;/p&gt;
+&lt;p&gt;где:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\mu$ — коэффициент трения, зависящий от скорости  $W_{\perp}$,&lt;/li&gt;
+&lt;li&gt;$F_{r}(b)$ — радиальная сила взаимодействия, зависящая от расстояния $b$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;И тогда вектор силы трения:&lt;/p&gt;
+&lt;p&gt;$$
+\mathbf{F}&lt;em&gt;f = \beta W&lt;/em&gt;\perp F^r(b) \mathbf{n}
+$$&lt;/p&gt;
+&lt;h3 id=&#34;вращение-частиц&#34;&gt;Вращение частиц&lt;/h3&gt;
+&lt;p&gt;Угловую скорость каждой частицы можно найти с помощью системы уравнений:&lt;/p&gt;
+&lt;p&gt;$$
+I_i \varepsilon_i = R_i \sum \frac{b}{R_i + R_j} F^f_{ij}, \quad \frac{d\omega_i}{dt} = \varepsilon_i
+$$&lt;/p&gt;
+&lt;p&gt;Где момент инерции определяется как:&lt;/p&gt;
+&lt;p&gt;$$
+I_i = \frac{2}{5} m_i R_i^2
+$$&lt;/p&gt;
+&lt;p&gt;а энергия вращения:&lt;/p&gt;
+&lt;p&gt;$$
+E_{\text{rot}} = \frac{I_i \omega_i^2}{2}
+$$&lt;/p&gt;
+&lt;p&gt;Для системы, в которой есть сила трения, полная энергия не сохраняется, часть энергии в результате трения переходит в тепло. Энергию, перешедшую в тепло, можно найти в виде разности начальной и текущей полной энергии.&lt;/p&gt;
+&lt;h3 id=&#34;слипание-частиц&#34;&gt;Слипание частиц&lt;/h3&gt;
+&lt;p&gt;Возможно полное слипание пары частиц. В результате образуется одна, радиус которой вычисляется как:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$R = \sqrt[3]{R_i^3 + R_j^3}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Масса равна сумме масс слипшихся облаков:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$m = m_i + m_j$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;а координаты новой частицы вычисляются по формуле:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\mathbf{r} = \frac{m_i \mathbf{r}_i + m_j \mathbf{r}_j}{m_i + m_j}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Аналогично вычисляется скорость:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\mathbf{v} = \frac{m_i \mathbf{v}_i + m_j \mathbf{v}_j}{m_i + m_j}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Надо иметь ввиду, что при слипании частиц гравитационная энергия результирующей частицы не равна сумме гравитационных энергий исходных частиц. Тогда гравитационная энергия новой частицы:&lt;/p&gt;
+&lt;p&gt;$$
+E_g = -\frac{\gamma m^2}{2R}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;описание-модели&#34;&gt;Описание модели&lt;/h2&gt;
+&lt;h3 id=&#34;двумерная-модель-с-центральным-притяжением&#34;&gt;Двумерная модель с центральным притяжением&lt;/h3&gt;
+&lt;p&gt;На первом этапе моделируется движение частиц в плоскости под действием центральной неподвижной массы. Частицы движутся по орбитам с первой космической скоростью, не взаимодействуя друг с другом.&lt;/p&gt;
+&lt;h3 id=&#34;введение-гравитации-и-отталкивания&#34;&gt;Введение гравитации и отталкивания&lt;/h3&gt;
+&lt;p&gt;Убирается центральная точка, вводится гравитационное взаимодействие между частицами. При сближении частиц на расстояние, меньшее суммы радиусов, включается сила отталкивания. Контролируется полный импульс системы (должен быть равен нулю). На экран выводятся кинетическая и потенциальная энергии.&lt;/p&gt;
+&lt;h3 id=&#34;учёт-вращения&#34;&gt;Учёт вращения&lt;/h3&gt;
+&lt;p&gt;Добавляются угловые скорости вращения частиц вокруг собственной оси. Вводится сила трения.&lt;/p&gt;
+&lt;h3 id=&#34;трёхмерная-модель&#34;&gt;Трёхмерная модель&lt;/h3&gt;
+&lt;p&gt;Моделирование переносится в трёхмерное пространство. Выводятся проекции движения на плоскости $XY$, $XZ$, $YZ$. Строятся графики зависимости энергий от времени.&lt;/p&gt;
+&lt;h3 id=&#34;слипание-частиц-1&#34;&gt;Слипание частиц&lt;/h3&gt;
+&lt;p&gt;В трёхмерной модели вводится механизм слипания частиц при их сближении. Сохраняются масса и импульс системы.&lt;/p&gt;
+&lt;h3 id=&#34;трение-и-диссипация-энергии&#34;&gt;Трение и диссипация энергии&lt;/h3&gt;
+&lt;p&gt;Вводится сила трения. Анализируется поведение кинетической и потенциальной энергии. Часть энергии переходит в тепло.&lt;/p&gt;
+&lt;h3 id=&#34;частицы-разных-сортов&#34;&gt;Частицы разных сортов&lt;/h3&gt;
+&lt;p&gt;Вводятся частицы двух типов с разной массой и радиусом. Добавляется трение. Выводится график энергии, переходящей в тепло. Затем массы и радиусы задаются случайным образом.&lt;/p&gt;
+&lt;h2 id=&#34;заключение&#34;&gt;Заключение&lt;/h2&gt;
+&lt;p&gt;В результате выполнения работы было исследовано образование планетной системы, изучены формулы для построения численной модели формирования планетной системы из газопылевого облака. Модель включает гравитационное взаимодействие, силы отталкивания и трения, вращение и слипание частиц.&lt;/p&gt;
+&lt;h1 id=&#34;выводы&#34;&gt;Выводы&lt;/h1&gt;
+&lt;p&gt;Нами было произведено исследование для численного моделирования образования планетной системы из газопылевого облака с использованием методов молекулярной динамики, гравитационного взаимодействия, сил трения и слипания частиц.&lt;/p&gt;
+&lt;h1 class=&#34;unnumbered&#34; id=&#34;список-литературы&#34;&gt;Список литературы&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://esystem.rudn.ru/pluginfile.php/3094549/mod_folder/content/0/%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%B2%20%D0%94.%20%D0%90.%20-%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2%20%D0%B8%20%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9%20%D0%BD%D0%B0%20%D0%9F%D0%9A.pdf?forcedownload=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Медведев Д. А. - Моделирование физических процессов и явлений.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pikabu.ru/story/paru_slov_o_bolshom_vzryive_7673576?cid=178197280&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Большой взрыв&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://chudinov.ru/butusov/5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Происхождение Солнечной системы&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
       <title>Contact</title>
-      <link>https://example.com/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tour</title>
-      <link>https://example.com/tour/</link>
+      <link>http://localhost:1313/tour/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/tour/</guid>
+      <guid>http://localhost:1313/tour/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Jian Yang and Monica Hall Win the Best Paper Award at Wowchemy 2020</title>
-      <link>https://example.com/post/20-12-02-icml-best-paper/</link>
-      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/20-12-02-icml-best-paper/</guid>
-      <description>&lt;p&gt;Congratulations to Jian Yang and Monica Hall for winning the Best Paper Award at the 2020 Conference on Wowchemy for their paper “Learning Wowchemy”.&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
-&lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
-&lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Richard Hendricks Wins First Place in the Wowchemy Prize</title>
-      <link>https://example.com/post/20-12-01-wowchemy-prize/</link>
-      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/20-12-01-wowchemy-prize/</guid>
-      <description>&lt;p&gt;Congratulations to Richard Hendricks for winning first place in the Wowchemy Prize.&lt;/p&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.&lt;/p&gt;
-&lt;p&gt;Sed eu dui nec ligula bibendum dapibus. Nullam imperdiet auctor tortor, vel cursus mauris malesuada non. Quisque ultrices euismod dapibus. Aenean sed gravida risus. Sed nisi tortor, vulputate nec quam non, placerat porta nisl. Nunc varius lobortis urna, condimentum facilisis ipsum molestie eu. Ut molestie eleifend ligula sed dignissim. Duis ut tellus turpis. Praesent tincidunt, nunc sed congue malesuada, mauris enim maximus massa, eget interdum turpis urna et ante. Morbi sem nisl, cursus quis mollis et, interdum luctus augue. Aliquam laoreet, leo et accumsan tincidunt, libero neque aliquet lectus, a ultricies lorem mi a orci.&lt;/p&gt;
-&lt;p&gt;Mauris dapibus sem vel magna convallis laoreet. Donec in venenatis urna, vitae sodales odio. Praesent tortor diam, varius non luctus nec, bibendum vel est. Quisque id sem enim. Maecenas at est leo. Vestibulum tristique pellentesque ex, blandit placerat nunc eleifend sit amet. Fusce eget lectus bibendum, accumsan mi quis, luctus sem. Etiam vitae nulla scelerisque, eleifend odio in, euismod quam. Etiam porta ullamcorper massa, vitae gravida turpis euismod quis. Mauris sodales sem ac ultrices viverra. In placerat ultrices sapien. Suspendisse eu arcu hendrerit, luctus tortor cursus, maximus dolor. Proin et velit et quam gravida dapibus. Donec blandit justo ut consequat tristique.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>An example preprint / working paper</title>
-      <link>https://example.com/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example journal article</title>
-      <link>https://example.com/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>https://example.com/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including &lt;a href=&#34;https://docs.hugoblox.com/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title></title>
-      <link>https://example.com/admin/config.yml</link>
+      <link>http://localhost:1313/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/admin/config.yml</guid>
+      <guid>http://localhost:1313/admin/config.yml</guid>
       <description></description>
     </item>
     
