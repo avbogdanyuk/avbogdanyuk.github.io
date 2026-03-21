@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sofia Luipp Romanovna | Wowchemy Research Group</title>
+    <link>https://example.com/author/sofia-luipp-romanovna/</link>
+      <atom:link href="https://example.com/author/sofia-luipp-romanovna/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sofia Luipp Romanovna</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://example.com/author/sofia-luipp-romanovna/avatar_hu_7496db4ae4e5dbf8.png</url>
+      <title>Sofia Luipp Romanovna</title>
+      <link>https://example.com/author/sofia-luipp-romanovna/</link>
+    </image>
+    
+    <item>
+      <title>Sofia Luipp Romanovna</title>
+      <link>https://example.com/author/sofia-luipp-romanovna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/author/sofia-luipp-romanovna/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

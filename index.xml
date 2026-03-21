@@ -28,18 +28,18 @@
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://example.com/contact/</link>
-      <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/contact/</guid>
+      <title>People</title>
+      <link>https://example.com/people/</link>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/people/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>People</title>
-      <link>https://example.com/people/</link>
+      <title>Contact</title>
+      <link>https://example.com/contact/</link>
       <pubDate>Mon, 24 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/people/</guid>
+      <guid>https://example.com/contact/</guid>
       <description></description>
     </item>
     

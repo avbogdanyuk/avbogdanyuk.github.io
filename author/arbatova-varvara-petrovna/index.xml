@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arbatova Varvara Petrovna | Wowchemy Research Group</title>
+    <link>https://example.com/author/arbatova-varvara-petrovna/</link>
+      <atom:link href="https://example.com/author/arbatova-varvara-petrovna/index.xml" rel="self" type="application/rss+xml" />
+    <description>Arbatova Varvara Petrovna</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://example.com/author/arbatova-varvara-petrovna/avatar_hu_9615c8b0712aee4b.jpg</url>
+      <title>Arbatova Varvara Petrovna</title>
+      <link>https://example.com/author/arbatova-varvara-petrovna/</link>
+    </image>
+    
+    <item>
+      <title>Arbatova Varvara Petrovna</title>
+      <link>https://example.com/author/arbatova-varvara-petrovna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/author/arbatova-varvara-petrovna/</guid>
+      <description>&lt;p&gt;Hi! I am a student at RUDN. I am studying in the specialty ‘Mathematics and Computer Science’, in the translator module of my university, and I am taking professional retraining courses from Skillbox.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
