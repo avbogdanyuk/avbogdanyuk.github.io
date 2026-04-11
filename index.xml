@@ -28,6 +28,774 @@
     </item>
     
     <item>
+      <title>Проектная работа. Образование планетной системы</title>
+      <link>https://example.com/post/stage_2/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/stage_2/</guid>
+      <description>&lt;p&gt;Проектная работа. Образование планетной системы&lt;/p&gt;
+&lt;h1 id=&#34;цель-работы&#34;&gt;Цель работы&lt;/h1&gt;
+&lt;p&gt;Целью данного этапа работы является разработка алгоритмов численного моделирования образования планетной системы из газопылевого облака, включая алгоритмы вычисления гравитационных сил, сил отталкивания и трения, интегрирования уравнений движения, обновления угловых скоростей и слипания частиц, на основе которых будет реализована программа моделирования.&lt;/p&gt;
+&lt;h1 id=&#34;задание&#34;&gt;Задание&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Напиcать программу, моделирующую движение N точек в плоскости, испытывающих притяжение к центральной неподвижной точке, не взаимодействующих между собой  и двигающихся по орбитам с первой космической скоростью.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести гравитационное взаимодействие между частицами. Убрать неподвижную центральную точку. Добавить отталкивание между частицами при их сближении на расстояние меньше суммы их радиусов. Вывести на экран кинетическую и потенциальную энергии. Сделать импульс системы равным 0. Добавить силы трения между частицами.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Включить в модель угловые скорости вращения вокруг собственной оси каждой частицы.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Смоделировать трехмерный случай N взаимодействующих частиц с отталкиванием без трения. Вывести на экран проекции движения частиц в плоскостях XY , Y Z, XZ. Нарисовать зависимость кинетической, потенциальной и полной энергии от времени.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести в трехмерном случае слипание частиц после того, как они приблизятся на малое расстояние. При образовании большей частицы должны сохраняться суммарные масса и импульс системы.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести силы трения. Объяснить вид кинетической и потенциальной энергии.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ввести частицы двух сортов с разной массой и соответствующим массе радиусом. Добавить силу трения между частицами. Вывести на экран график энергии, переходящей в тепло. Объяснить график полной энергии. Ввести частицы с массами, задаваемыми случайным образом, и соответствующими радиусами.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;алгоритмы-решения-задачи&#34;&gt;Алгоритмы решения задачи&lt;/h1&gt;
+&lt;h2 id=&#34;структуры-данных&#34;&gt;Структуры данных&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/1_hu_8e09db3195c59aef.webp 400w,
+               /post/stage_2/1_hu_c3a87c22d46e8155.webp 760w,
+               /post/stage_2/1_hu_e4aa1e7bdc1a97ac.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/1_hu_8e09db3195c59aef.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;92&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;инициализация&#34;&gt;Инициализация&lt;/h2&gt;
+&lt;p&gt;Перед началом главного цикла выполняется однократная инициализация системы.&lt;/p&gt;
+&lt;p&gt;Радиус и угол каждой частицы выбираются случайно, обеспечивая равномерное распределение по площади диска:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/2_hu_a41aa747c0725d9c.webp 400w,
+               /post/stage_2/2_hu_198aed43abea78d1.webp 760w,
+               /post/stage_2/2_hu_3f7b63fcdc591ec0.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/2_hu_a41aa747c0725d9c.webp&#34;
+               width=&#34;373&#34;
+               height=&#34;103&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/3_hu_da4be9f729f68a57.webp 400w,
+               /post/stage_2/3_hu_17627b1e379b572c.webp 760w,
+               /post/stage_2/3_hu_526d9d12bbcc0e74.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/3_hu_da4be9f729f68a57.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;42&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Начальные скорости задаются из условия кеплеровского вращения:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/4_hu_49c7bbeb0403a7d1.webp 400w,
+               /post/stage_2/4_hu_8c6e6fea2c65c03e.webp 760w,
+               /post/stage_2/4_hu_cdbaca83d590bc12.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/4_hu_49c7bbeb0403a7d1.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;118&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;После этого из скоростей всех частиц вычитается скорость центра масс, чтобы полный импульс системы стал равен нулю:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/5_hu_880800be3b73540f.webp 400w,
+               /post/stage_2/5_hu_30f49fcc3bcb4668.webp 760w,
+               /post/stage_2/5_hu_5346ef056d96891.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/5_hu_880800be3b73540f.webp&#34;
+               width=&#34;265&#34;
+               height=&#34;169&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/6_hu_c2b61953c61fdc25.webp 400w,
+               /post/stage_2/6_hu_fd70e3a980f2727d.webp 760w,
+               /post/stage_2/6_hu_86b26661a18e6e16.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/6_hu_c2b61953c61fdc25.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;53&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;главный-цикл&#34;&gt;Главный цикл&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/7_hu_8956f919f996ffc.webp 400w,
+               /post/stage_2/7_hu_fadb11d483ef1967.webp 760w,
+               /post/stage_2/7_hu_9df4cf964d06356c.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/7_hu_8956f919f996ffc.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;26&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;шаг-1-вычисление-сил&#34;&gt;Шаг 1. Вычисление сил&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/8_hu_9f399ba746ff439e.webp 400w,
+               /post/stage_2/8_hu_6eee8bf002a6036d.webp 760w,
+               /post/stage_2/8_hu_5172e76c3a18757d.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/8_hu_9f399ba746ff439e.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;76&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Гравитационная сила&lt;/strong&gt; вычисляется всегда:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/9_hu_2d7febb688f719d8.webp 400w,
+               /post/stage_2/9_hu_a51460b41fa771f4.webp 760w,
+               /post/stage_2/9_hu_7c453fc3071b2f1d.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/9_hu_2d7febb688f719d8.webp&#34;
+               width=&#34;280&#34;
+               height=&#34;106&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/10_hu_c57c30938594ff9a.webp 400w,
+               /post/stage_2/10_hu_105e871b4c7b536b.webp 760w,
+               /post/stage_2/10_hu_df6edf94930daa7c.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/10_hu_c57c30938594ff9a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;59&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/11_hu_dd29411802f9abe8.webp 400w,
+               /post/stage_2/11_hu_42c1a839dabf571d.webp 760w,
+               /post/stage_2/11_hu_17e79fe8b29dde8.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/11_hu_dd29411802f9abe8.webp&#34;
+               width=&#34;409&#34;
+               height=&#34;139&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/12_hu_5243284cf9cd0892.webp 400w,
+               /post/stage_2/12_hu_636fc29d766fdb68.webp 760w,
+               /post/stage_2/12_hu_203dc0dfac68cdfc.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/12_hu_5243284cf9cd0892.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;92&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/13_hu_cc6b88e56698d230.webp 400w,
+               /post/stage_2/13_hu_ccf84ae099890d62.webp 760w,
+               /post/stage_2/13_hu_4ceb5a67a6a9591a.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/13_hu_cc6b88e56698d230.webp&#34;
+               width=&#34;474&#34;
+               height=&#34;100&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/14_hu_511c4a18f4719da1.webp 400w,
+               /post/stage_2/14_hu_203904e1de609691.webp 760w,
+               /post/stage_2/14_hu_70d8e6f7f95e501d.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/14_hu_511c4a18f4719da1.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;44&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/15_hu_6867fcd272581e5.webp 400w,
+               /post/stage_2/15_hu_9d3dd2a7a7fe25ea.webp 760w,
+               /post/stage_2/15_hu_912c91a70e4d6db5.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/15_hu_6867fcd272581e5.webp&#34;
+               width=&#34;324&#34;
+               height=&#34;105&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;По третьему закону Ньютона силы на частицу j противоположны по знаку. Суммарная сила на каждую частицу накапливается в массиве F.&lt;/p&gt;
+&lt;h3 id=&#34;шаг-2-интегрирование-уравнений-движения&#34;&gt;Шаг 2. Интегрирование уравнений движения&lt;/h3&gt;
+&lt;p&gt;Координаты и скорости обновляются методом Верле по скорости, который даёт второй порядок точности и хорошо сохраняет энергию:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/16_hu_2f4c17d1e9187b3a.webp 400w,
+               /post/stage_2/16_hu_4bbb0590012aa982.webp 760w,
+               /post/stage_2/16_hu_87ab2a382d320d8.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/16_hu_2f4c17d1e9187b3a.webp&#34;
+               width=&#34;405&#34;
+               height=&#34;220&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Для этого необходимо хранить силы предыдущего шага.&lt;/p&gt;
+&lt;h3 id=&#34;шаг-3-обновление-угловых-скоростей&#34;&gt;Шаг 3. Обновление угловых скоростей&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/17_hu_9bb181f0e6c7a442.webp 400w,
+               /post/stage_2/17_hu_edbd4b6f57b9bbb8.webp 760w,
+               /post/stage_2/17_hu_b5022a35911354f7.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/17_hu_9bb181f0e6c7a442.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;65&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/18_hu_89d017720b2b6079.webp 400w,
+               /post/stage_2/18_hu_2a06e30606a4ffca.webp 760w,
+               /post/stage_2/18_hu_ca53b0b0070d6298.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/18_hu_89d017720b2b6079.webp&#34;
+               width=&#34;481&#34;
+               height=&#34;120&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Угловая скорость обновляется методом Эйлера:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/19_hu_ca8dcf86341567ee.webp 400w,
+               /post/stage_2/19_hu_563548ef32559908.webp 760w,
+               /post/stage_2/19_hu_27d4ed374f832145.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/19_hu_ca8dcf86341567ee.webp&#34;
+               width=&#34;265&#34;
+               height=&#34;75&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;шаг-4-проверка-условия-слипания&#34;&gt;Шаг 4. Проверка условия слипания&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/20_hu_327868b8bc04f581.webp 400w,
+               /post/stage_2/20_hu_a1685f8593977336.webp 760w,
+               /post/stage_2/20_hu_31d5a97ff21a815d.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/20_hu_327868b8bc04f581.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;90&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/21_hu_3beba62b7669f02e.webp 400w,
+               /post/stage_2/21_hu_68ae79ab70ed38b2.webp 760w,
+               /post/stage_2/21_hu_bd62663bce3343dd.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/21_hu_3beba62b7669f02e.webp&#34;
+               width=&#34;504&#34;
+               height=&#34;196&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Результат записывается на место частицы i, частица j помечается как неактивная. Общее число активных частиц уменьшается на единицу.&lt;/p&gt;
+&lt;h3 id=&#34;шаг-5-вычисление-и-запись-энергий&#34;&gt;Шаг 5. Вычисление и запись энергий&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/22_hu_bb119467070716f9.webp 400w,
+               /post/stage_2/22_hu_34025ad29c8fd416.webp 760w,
+               /post/stage_2/22_hu_e072013f77459496.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/22_hu_bb119467070716f9.webp&#34;
+               width=&#34;634&#34;
+               height=&#34;208&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Значения сохраняются для последующего построения графиков.&lt;/p&gt;
+&lt;h1 id=&#34;блок-схемы&#34;&gt;Блок-схемы&lt;/h1&gt;
+&lt;p&gt;Построим блок-схему для наглядности.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/23_hu_fdf3a82c49bf6c8b.webp 400w,
+               /post/stage_2/23_hu_b481d403c0a6b0e8.webp 760w,
+               /post/stage_2/23_hu_b2f961ad7852f588.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/23_hu_fdf3a82c49bf6c8b.webp&#34;
+               width=&#34;290&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Главный цикл&lt;/strong&gt; — верхняя часть. Показывает последовательность шагов на каждой итерации по времени:&lt;br&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/24_hu_2d4e8cf6f320b599.webp 400w,
+               /post/stage_2/24_hu_4e8cae939e5f23a8.webp 760w,
+               /post/stage_2/24_hu_bb5e4dca2b324c5e.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/24_hu_2d4e8cf6f320b599.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;49&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/stage_2/25_hu_f18f2e5a7f380891.webp 400w,
+               /post/stage_2/25_hu_e5ea864dee0a7310.webp 760w,
+               /post/stage_2/25_hu_d42c1ed5ce16a98b.webp 1200w&#34;
+               src=&#34;https://example.com/post/stage_2/25_hu_f18f2e5a7f380891.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;147&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Подсхема В&lt;/strong&gt; — инициализация: случайные координаты по Кеплеру, обнуление суммарного импульса, обнуление угловых скоростей.&lt;/p&gt;
+&lt;h1 id=&#34;вывод&#34;&gt;Вывод&lt;/h1&gt;
+&lt;p&gt;На данном этапе были разработаны алгоритмы численного моделирования: инициализация системы частиц, вычисление гравитационных сил, сил отталкивания и трения, интегрирование уравнений движения методом Верле, обновление угловых скоростей, слипание частиц с сохранением массы и импульса, а также вычисление энергий системы. Полученные алгоритмы служат основой для программной реализации на следующем этапе.&lt;/p&gt;
+&lt;h1 class=&#34;unnumbered&#34; id=&#34;список-литературы&#34;&gt;Список литературы&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://esystem.rudn.ru/pluginfile.php/3094549/mod_folder/content/0/%D0%9C%D0%B5%D0%B4%D0%B2%D0%B5%D0%B4%D0%B5%D0%B2%20%D0%94.%20%D0%90.%20-%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%84%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D0%BE%D0%B2%20%D0%B8%20%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9%20%D0%BD%D0%B0%20%D0%9F%D0%9A.pdf?forcedownload=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Медведев Д. А. — Моделирование физических процессов и явлений на ПК&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://habr.com/ru/articles/906322/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Реализация базового метода Стёрмера-Верле&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ssd.sscc.ru/sites/default/files/content/attach/546/vershinin_lyamin_pleshkov_vaycel_-_gravitacionnaya_zadacha_n_tel.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Гравитационная задача N тел&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://physics42.ru/tutorials/gravitatsionnaya-fizika/n-body-simulyatsii-gravitatsionnaya-fizika/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;N-body симуляции&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%B4%D0%B8%D1%81%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D1%85_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Общее введение в метод дискретных элементов&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
       <title>People</title>
       <link>https://example.com/people/</link>
       <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
